@@ -1,2 +1,33 @@
 mixin header()
   +b.HEADER.header
+    +e.top-row
+      +b.user-options
+        .container
+          +e.currency Currency : ∨
+          
+          +e.buttons
+            +e.register Register
+            +e.autorization Sign In
+          
+            +e.bag empty  v
+
+    +e.bottom-row
+      +b.menu-row
+        .container-main
+          +e.A(href="#").link
+            +e.IMG(src="../assets/images/logo.png" href="").logo
+
+          +e.right-items  
+            +e.nav.nav__
+              +e.A(href="#").item mens
+                //- +inline-svg(arrow)
+              +e.A(href="#").item womens
+              +e.A(href="#").item the brand
+              +e.A(href="#").item local stores
+              +e.A(href="#").item look book
+
+            +e.search-form  
+              +e.INPUT(type='search' placeholder="Search.").input-element
+
+
+
