@@ -228,6 +228,7 @@
   margin-top 62px
   display flex
   justify-content space-between
+  margin-bottom 124px
 
   &__item
     width 663px
@@ -282,3 +283,70 @@
   &__button
     width 180px
     height 59px
+
+.navigate-menu
+  background-color lightGray
+  
+  .container
+    padding-top 63px
+    display flex 
+    justify-content space-between
+  
+  &__item 
+    display flex
+    flex-direction column
+
+  &__title-elem
+    color #575153
+    font-family Montserrat-Regular
+    font-size 13px
+    font-weight 400
+    line-height 20px
+    text-transform uppercase
+    margin-bottom 33px
+  
+  &__elem
+    color grayText
+    font-family Montserrat-Light
+    font-size 14px
+    font-weight 300
+    line-height 30px
+
+    &:not(:last-child)
+      margin-bottom 5px
+
+.information-desk
+  background-color lightGray
+
+  .container
+    padding-top 63px
+    padding-bottom 56px
+    display flex
+  
+  &__item
+    width 570px
+    height 200px
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+
+    &:first-child
+      margin-right 30px
+      background-color darkGray
+    &:last-child
+      background-color blueColor
+
+  &__title, &__subtitle
+    color whiteColor
+    font-size 36px
+    letter-spacing 1.8px
+    line-height 48px
+    text-transform uppercase
+
+  &__title
+    font-family Montserrat-Bold
+    font-weight 700
+
+  &__subtitle
+    font-family Montserrat-Light
