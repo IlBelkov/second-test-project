@@ -12,7 +12,12 @@
   &__button
     width 342px
     height 59px
-    border 2px solid #737373
+    position absolute
+    bottom 122px
+    right 323px
+
+.button
+    border 2px solid grayText
     color #454647
     font-family Montserrat-Regular
     font-size 16px
@@ -22,15 +27,20 @@
     display flex 
     justify-content center
     align-items center
-    position absolute
-    bottom 122px
-    right 323px
+
+    &:hover
+      background-color blueColor
+      color whiteColor
+      border-color blueColor
+      cursor pointer
 
 .catalog
   margin-top 64px
   .container-main
     border-top 1px solid alpha(darkGray,0.2)
+    border-bottom 1px solid alpha(darkGray,0.2)
     padding-top 54px
+    padding-bottom 62px
 
   &__tabs
     margin-bottom 61px
@@ -72,10 +82,19 @@
     background darkGray
     position relative
 
+    &:hover
+      box-shadow 0 0px 10px 10px alpha(blackColor,0.2)
+      .product__hidden-inform, .product__hidden-bar
+        display block
+
     &:nth-child(3)
       width 870px
       height 704px
       margin-top 30px
+      z-index 1
+
+    &:nth-child(1), &:nth-child(2)
+      z-index 2
 
   &__price
     position absolute
@@ -87,9 +106,9 @@
     margin-right 12px
     text-decoration line-through
 
-  &__hidden-inform
+  &__hidden-bar
     position absolute
-    bottom -150px
+    bottom -168px
     left 0
     min-height 150px
     display flex 
@@ -98,8 +117,9 @@
     background-color whiteColor
     text-align center
     width 100%
+    box-shadow 0 15px 10px 10px alpha(blackColor,0.2)
 
-  &__title-inform
+  &__title-bar
     color grayText
     font-family Montserrat-Regular
     font-size 13px
@@ -108,18 +128,19 @@
     text-transform uppercase
     margin-top 21px
 
-  &__text-inform   
+  &__text-bar   
     color #8e8c8c
     font-family Roboto-Regular
     font-size 15px
     font-weight 400
     margin-top 19px
 
-  &__buttons-inform
+  &__buttons-bar
     display flex
     justify-content center
     align-items center
     margin-top 17px
+    margin-bottom 17px
 
   &__button
     width 30px
@@ -165,15 +186,99 @@
         left 50%
         transform translate(-50%,-50%)
         background url('../images/arrows.png') no-repeat
+  
+  &__position
+    position absolute
+    top 16px
+    right 16px
+    flex-direction column
+    display flex
 
+  &__front-img
+    margin-bottom 17px
+  &__front-img, &__back-img
+    &:hover
+      box-shadow 0 5px 10px 10px alpha(blackColor,0.3)
+      cursor pointer
+
+  &__inf
+    position absolute
+    top 60%
+    left 50%
+    transform translateX(-50%)\
+
+    &:hover
+      cursor pointer
+
+  &__hidden-bar, &__hidden-inform
+    display none
 
 .card-right
   &:nth-child(3) 
     order 1 
     margin-top 0px
     margin-bottom 30px    
+    z-index 3
   &:nth-child(2) 
     order 2   
   &:nth-child(1) 
     order 3   
 
+.lookbooks
+  margin-top 62px
+  display flex
+  justify-content space-between
+
+  &__item
+    width 663px
+    height 530px
+    background-color lightGray
+    position relative
+    text-align right
+
+    &:not(:last-child)
+      margin-right 30px
+
+  &__article
+    position absolute
+    top 99px
+    right 57px
+    display flex
+    align-items flex-end
+    flex-direction column
+
+  &__img
+    position absolute
+    top 39px
+    left 43px
+    margin-right 39px
+
+  &__title    
+    color #575153
+    font-family Montserrat-Bold
+    font-size 48px
+    font-weight 700
+    line-height 54px
+    text-transform uppercase
+    letter-spacing 2.4px
+
+  &__subtitle
+    color #575153
+    font-size 48px
+    text-transform uppercase
+    font-family Montserrat-Light
+    font-weight 300
+    margin-bottom 29px
+
+  &__text
+    color grayText
+    font-family Roboto-Regular
+    font-size 15px
+    font-weight 400
+    line-height 22px
+    max-width 294px
+    margin-bottom 31px
+      
+  &__button
+    width 180px
+    height 59px
