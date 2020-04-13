@@ -3,5 +3,59 @@ extends ../layouts/main
 block content
 
   +b.page--main
-    
-     
+    +b.hero
+      +e.IMG(src='../assets/images/heroTitle.png').label
+      +e.button.button shop men’s collection
+
+    +b.SECTION.catalog.section
+      .container-main
+        +e.tabs.tabs__
+          +e.link popular
+          +e.link new arrivals
+          +e.link best sellers
+          +e.link special offers 
+          +e.link coming soon
+
+        +e.products.product__
+          +e.left-block
+            +e.card
+              +e.IMG(src='../../assets/images/card1.png').image
+              +e.price
+                +e.sale
+                +e.cost £89.99
+            +e.card
+              +e.IMG(src='../../assets/images/card2.png').image
+              +e.price
+                +e.sale
+                +e.cost £47.50 
+            +e.card 
+              +e.IMG(src='../../assets/images/card3.png').image
+              +e.price
+                +e.sale 
+                +e.cost £69.95
+          +e.right-block
+            +e.card.card-right 
+              +e.IMG(src='../../assets/images/card6.png').image
+              +e.price
+                +e.sale
+                +e.cost £34.79 
+            +e.card.card-right
+              +e.IMG(src='../../assets/images/card5.png').image
+              +e.price
+                +e.sale
+                +e.cost £29.95
+              +e.hidden-inform
+                +e.title-inform Womens burnt orange casual tee  £29.95
+                +e.text-inform Classic casual t-shirt for women on the move. 
+                              |#[br]  100% cotton.
+                +e.buttons-inform
+                  +e.button
+                  +e.button
+                  +e.button  
+            +e.card.card-right
+              +e.IMG(src='../../assets/images/card4.png').image
+              +e.price
+                +e.sale £107
+                +e.cost £89.99
+    +b.hui
+      +inline-svg('arrow')
