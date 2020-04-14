@@ -3,5 +3,208 @@ extends ../layouts/main
 block content
 
   +b.page--main
-    
-     
+    +b.hero
+      +e.IMG(src='../assets/images/heroTitle.png').label
+      +e.button.button shop men’s collection
+
+    +b.SECTION.catalog.section
+      .container-main
+        +e.tabs.tabs__
+          +e.link popular
+          +e.link new arrivals
+          +e.link best sellers
+          +e.link special offers 
+          +e.link coming soon
+
+        +e.products.product__
+          +e.left-block
+            +e.card
+              +e.IMG(src='../../assets/images/card1.png').image
+              +e.price
+                +e.sale
+                +e.cost £89.99
+              +e.hidden-inform
+                +e.IMG(src='../../assets/images/i.png').inf
+                +e.position
+                  +e.IMG(src='../../assets/images/thumb-front.png').front-img
+                  +e.IMG(src='../../assets/images/thumb-back.png').back-img   
+              +e.hidden-bar
+                +e.title-bar Womens burnt orange casual tee  £29.95
+                +e.text-bar Classic casual t-shirt for women on the move. 
+                              |#[br]  100% cotton.
+                +e.buttons-bar
+                  +e.button
+                  +e.button
+                  +e.button  
+            +e.card
+              +e.IMG(src='../../assets/images/card2.png').image
+              +e.price
+                +e.sale
+                +e.cost £47.50 
+              +e.hidden-inform
+                +e.IMG(src='../../assets/images/i.png').inf
+                +e.position
+                  +e.IMG(src='../../assets/images/thumb-front.png').front-img
+                  +e.IMG(src='../../assets/images/thumb-back.png').back-img   
+              +e.hidden-bar
+                +e.title-bar Womens burnt orange casual tee  £29.95
+                +e.text-bar Classic casual t-shirt for women on the move. 
+                              |#[br]  100% cotton.
+                +e.buttons-bar
+                  +e.button
+                  +e.button
+                  +e.button  
+            +e.card 
+              +e.IMG(src='../../assets/images/card3.png').image
+              +e.price
+                +e.sale 
+                +e.cost £69.95
+              +e.hidden-inform
+                +e.IMG(src='../../assets/images/i.png').inf
+                +e.position
+                  +e.IMG(src='../../assets/images/thumb-front.png').front-img
+                  +e.IMG(src='../../assets/images/thumb-back.png').back-img   
+              +e.hidden-bar
+                +e.title-bar Womens burnt orange casual tee  £29.95
+                +e.text-bar Classic casual t-shirt for women on the move. 
+                              |#[br]  100% cotton.
+                +e.buttons-bar
+                  +e.button
+                  +e.button
+                  +e.button  
+          +e.right-block
+            +e.card.card-right 
+              +e.IMG(src='../../assets/images/card6.png').image
+              +e.price
+                +e.sale
+                +e.cost £34.79
+              +e.hidden-inform
+                +e.IMG(src='../../assets/images/i.png').inf
+                +e.position
+                  +e.IMG(src='../../assets/images/thumb-front.png').front-img
+                  +e.IMG(src='../../assets/images/thumb-back.png').back-img   
+              +e.hidden-bar
+                +e.title-bar Womens burnt orange casual tee  £29.95
+                +e.text-bar Classic casual t-shirt for women on the move. 
+                              |#[br]  100% cotton.
+                +e.buttons-bar
+                  +e.button
+                  +e.button
+                  +e.button   
+            +e.card.card-right
+              +e.IMG(src='../../assets/images/card5.png').image
+              +e.price
+                +e.sale
+                +e.cost £29.95
+
+              +e.hidden-inform
+                +e.IMG(src='../../assets/images/i.png').inf
+                +e.position
+                  +e.IMG(src='../../assets/images/thumb-front.png').front-img
+                  +e.IMG(src='../../assets/images/thumb-back.png').back-img   
+              +e.hidden-bar
+                +e.title-bar Womens burnt orange casual tee  £29.95
+                +e.text-bar Classic casual t-shirt for women on the move. 
+                              |#[br]  100% cotton.
+                +e.buttons-bar
+                  +e.button
+                  +e.button
+                  +e.button  
+            +e.card.card-right
+              +e.IMG(src='../../assets/images/card4.png').image
+              +e.price
+                +e.sale £107
+                +e.cost £89.99
+              +e.hidden-inform
+                +e.IMG(src='../../assets/images/i.png').inf
+                +e.position
+                  +e.IMG(src='../../assets/images/thumb-front.png').front-img
+                  +e.IMG(src='../../assets/images/thumb-back.png').back-img   
+              +e.hidden-bar
+                +e.title-bar Womens burnt orange casual tee  £29.95
+                +e.text-bar Classic casual t-shirt for women on the move. 
+                              |#[br]  100% cotton.
+                +e.buttons-bar
+                  +e.button
+                  +e.button
+                  +e.button 
+
+    +b.SECTION.lookbooks.section
+      
+      +e.item
+        +e.IMG(src='../../assets/images/men.png').img
+        +e.article
+          +e.title men’s
+          +e.subtitle lookbook
+          +e.text  Lorem ipsum dolor sit amet eras facilisis
+                  |  consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
+                  |  Elementum metus facilisis ut phasellu.
+          +e.button.button view now
+      
+      +e.item
+        +e.IMG(src='../../assets/images/women.png').img
+        +e.article
+          +e.title women’s
+          +e.subtitle lookbook
+          +e.text Lorem ipsum dolor sit amet eras facilisis
+                |  consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
+                |  Elementum metus facilisis ut phasellu.
+          +e.button.button view now
+      
+      +e.item
+        +e.IMG(src='../../assets/images/noname.png').img
+        +e.article
+          +e.title your
+          +e.subtitle lookbook
+          +e.text Lorem ipsum dolor sit amet eras facilisis
+                |  consectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.
+                |  Elementum metus facilisis ut phasellu.
+          +e.button.button view now
+
+    +b.SECTION.navigate-menu.section
+      .container
+        +e.item 
+          +e.title-elem information
+          +e.A(href='#').elem The brand
+          +e.A(href='#').elem Local stores
+          +e.A(href='#').elem Customer service
+          +e.A(href='#').elem Privacy & cookies
+          +e.A(href='#').elem Site map
+        +e.item 
+          +e.title-elem Why buy from us
+          +e.A(href='#').elem Shipping & returns
+          +e.A(href='#').elem Secure shopping
+          +e.A(href='#').elem Testimonials
+          +e.A(href='#').elem Award winning
+          +e.A(href='#').elem Ethical trading
+        +e.item 
+          +e.title-elem Your account
+          +e.A(href='#').elem Sign in
+          +e.A(href='#').elem Register
+          +e.A(href='#').elem View cart
+          +e.A(href='#').elem View your lookbook
+          +e.A(href='#').elem Track an order
+          +e.A(href='#').elem Update information
+        +e.item 
+          +e.A(href='#').title-elem Lookbook
+          +e.A(href='#').elem Latest posts
+          +e.A(href='#').elem Men’s lookbook
+          +e.A(href='#').elem Women’s lookbook
+          +e.A(href='#').elem Lookbooks RSS feed
+          +e.A(href='#').elem View your lookbook
+          +e.A(href='#').elem Delete your lookbook
+        +e.item 
+          +e.title-elem contact details
+          +e.A(href='#').elem Head Office: Avenue Fashion, 
+                  | #[br] 180-182 Regent Street, London.
+          +e.A(href='#').elem Telephone: 0123-456-789 
+          +e.A(href='#').elem Email: support@yourwebsite.com
+      
+    +b.SECTION.information-desk.section
+      .container
+        +e.item
+          +e.title award winner
+          +e.subtitle fashion awards 2016
+        +e.item
+          +e.title award winner
+          +e.subtitle fashion awards 2016
